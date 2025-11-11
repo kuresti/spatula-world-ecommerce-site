@@ -1,0 +1,92 @@
+/* header base */
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #363636;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* header-inner layout: Logo | nav| actions */
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 14px 20px;
+    gap: 20px;
+}
+
+/* Logo */
+.brand .logo {
+    width: 160px;
+    height: auto;
+    display: block;
+}
+
+/* Navigation */
+.primary-nav {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333F44;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+/* Hover and active states for nav links */
+.nav-link:hover,
+.nav-link:focus {
+    background: rgba(51,63,68,0.06);
+    outline: none;
+}
+
+/* Actions - right side */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Cart link */
+.cart-link {
+    position: relative;
+    text-decoration: none;
+    color: #333F44;
+    font-weight: 600;
+    padding: 6px 8px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cart-link:hover {
+    background: rgba(51,63,68,0.04);
+}
+
+.cart-badge {
+    background: #FF6B35;
+    color: white;
+    border-radius: 999px;
+    padding: 4px 8px;
+    font-size: 13px;
+    line-height: 1;
+}
