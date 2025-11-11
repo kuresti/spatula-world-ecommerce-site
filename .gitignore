@@ -1,0 +1,48 @@
+# 11/10/2025 Asked chatgpt what should go into a .gitignore file for a React + Vite + Node.js + MongoDB project.
+# Copied code from chatgpt
+
+# Node.js dependencies
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build output (Vite, React, or Node)
+dist/
+build/
+.cache/
+.temp/
+
+# Logs
+logs/
+*.log
+*.log.*
+*.seed
+*.pid.lock
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.debug
+
+# OS-specific files
+ehthumbs.db
+Desktop.ini
+
+# Coverage and test outputs
+coverage/
+*.lcov
+jest-html-reports-*.html
+
+# Misc
+*.zip
+*.tar.gz
