@@ -1,1 +1,1 @@
-# spatuala-world-ecommerce-site
+# spatula-world-ecommerce-site
