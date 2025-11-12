@@ -1,0 +1,94 @@
+/* Footer.css */
+
+.site-footer {
+    border-top: 1px solid #e6e6e6;
+    background: #fafafa;
+    color: #333F44;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    padding-top: 22px;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 18px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+/* Logo and Title */
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-logo {
+    width: 68px;
+    height: 68px;
+}
+
+.brand-text,
+.subtext {
+    font-size: 13px;
+    color: #667075;
+}
+
+/* Footer Navigation */
+.footer-nav {}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin: 6px 0;
+}
+
+.footer-link {
+    color: #333F44;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    text-decoration: underline;
+    outline: none;
+}
+
+/* Contact / Copy Right */
+.footer-contact {
+    text-align: right;
+}
+
+.contact-info {
+    font-size: 14px;
+    margin: 4px 0;
+    color: #444;
+}
+
+.social-media {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    margin-left: 6px;
+    border-radius: 6px;
+    text-decoration: none;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    font-size: 16px;
+}
+
+.social-media:hover,
+.social-media:focus {
+    background: #f3f3f3;
+    outline: none;
+}
+

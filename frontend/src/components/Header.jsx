@@ -32,7 +32,8 @@ export default function Header({
                     </Link>
                 </div>
 
-                {/*Center: Navigation links*/}
+                {/*Center: Navigation links*/}         
+                
                 <nav className="primary-nav" aria-label="Primary navigation">
                     <ul className="nav-list">
                         {links.map(link => (
@@ -43,7 +44,8 @@ export default function Header({
                             </li>
                         ))}
                     </ul>
-                </nav>
+                    </nav>
+                    
 
                 {/* Right: Actions (cart) */}
                 <div className="header-actions">
