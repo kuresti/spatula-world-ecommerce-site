@@ -1,9 +1,13 @@
+/********************************
+ * Required Resources
+ ********************************/
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const productRoutes = require('./routes/productRoutes');
 
-const productsRouter = require('./routes/products');
+
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -13,10 +17,10 @@ app.use(express.json());
 
 
 // Routes
-app.use('/api/products', productsRouter);
+app.use('/api/products', productRoutes);
 
 // Root
-app.get('/', (req, res) => res.send('API is running'));
+app.get('/', (req, res) => res.send('Welcome to Spatula World Backend'));
 
 // Connect to MongoDB and start server
 mongoose.connect(process.env.MONGO_URI, {
@@ -29,4 +33,4 @@ mongoose.connect(process.env.MONGO_URI, {
     })
     .catch(err => {
         console.error('MongoDB connection error:', err);
-})
+    });

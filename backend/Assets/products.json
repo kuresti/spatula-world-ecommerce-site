@@ -1,6 +1,6 @@
 {
 "products": [
-    {"id": 1,
+    {
      "name": "Classic Silicone Spatula",
      "category": "Silicone",
      "description": "Heat-resistant silicone spatula for everyday cooking",
@@ -8,7 +8,7 @@
      "image": "backend/Assets/images/classic-silicone-spatula.jpg",
      "stock": 120
     },
-    {"id": 2,
+    {
      "name": "Wooden Cooking Spatula",
      "category": "Wood",
      "description": "Durable wooden spatula, perfect for non-stick pans",
@@ -17,7 +17,7 @@
      "stock": 80
     },
     {
-      "id": 3,
+      
       "name": "Stainless Steel Turner",
       "category": "Metal",
       "description": "Sturdy stainless steel spatula for flipping foods",
@@ -26,7 +26,7 @@
       "stock": 60 
     },
     {
-      "id": 4,
+      
       "name": "Slotted Silicone Spatula",
       "category": "Silicone",
       "description": "Heat-resistant slotted spatula for draining liquids",
@@ -35,7 +35,7 @@
       "stock": 90
     },
     {
-      "id": 5,
+      
       "name": "Mini Spatula set (2 pcs)",
       "category": "Silicone",
       "description": "Handy mini spatulas for baking and spreading",
@@ -44,7 +44,7 @@
       "stock": 150
     },
     {
-      "id": 6,
+      
       "name": "Fish Spatula",
       "category": "Metal",
       "description": "Flexible stainless steel spatula for delicate foods",
@@ -53,7 +53,7 @@
       "stock": 40
     },
     {
-      "id": 7,
+      
       "name": "Offset Spatula",
       "category": "Metal",
       "description": "Ideal for frosting cakes and decorating desserts",
@@ -62,7 +62,7 @@
       "stock": 45
     },
     {
-      "id": 8,
+      
       "name": "High-Heat Nylon Spatula",
       "category": "Nylon",
       "description": "Safe for non-stick cookware up to 400°F",
@@ -71,7 +71,7 @@
       "stock": 55
     },
     {
-      "id": 9,
+      
       "name": "Pancake Spatula",
       "category": "Metal",
       "description": "Wide metal spatula for flipping pancakes and crepes",
@@ -80,7 +80,7 @@
       "stock": 100
     },
     {
-      "id": 10,
+      
       "name": "BBQ Silicone Spatula",
       "category": "Silicone",
       "description": "Long-handled spatula for grilling and BBQ",
@@ -89,7 +89,7 @@
       "stock": 76
     },
     {
-      "id": 11,
+      
       "name": "Scraper Spatula",
       "category": "Silicone",
       "description": "Flexible spatula for scraping bowls and jars",
@@ -98,7 +98,7 @@
       "stock": 45
     },
     {
-      "id": 12,
+      
       "name": "Colorful Cooking Spatula Set (5 pcs)",
       "category": "Silicone",
       "description": "Multi-colored spatulas for cooking and baking",
@@ -107,7 +107,7 @@
       "stock": 150
     },
     {
-      "id": 13,
+      
       "name": "Non-Stick Turner Spatula",
       "category": "Nylon",
       "description": "Heat-resistant spatula for non-stick pans",
@@ -116,7 +116,7 @@
       "stock": 85
     },
     {
-     "id": 14,
+     
      "name": "Professional Baking Spatula",
      "category": "Silicone",
      "description": "Perfect for professional baking and pastry work",
@@ -125,7 +125,7 @@
      "stock": 72
     },
     {
-      "id": 15,
+      
       "name": "Stainless Steel Slotted Turner",
       "category": "Metal",
       "description": "For flipping and draining foods on the stove",
@@ -134,7 +134,7 @@
       "stock": 23
     },
     {
-      "id": 16,
+      
       "name": "Flexible Pancake Turner",
       "category": "Silicone",
       "description": "Soft and flexible spatula for pancakes and omelets",
@@ -143,7 +143,7 @@
       "stock": 54
     },
     {
-      "id": 17,
+      
       "name": "Angled Spatula",
       "category": "Metal",
       "description": "Perfect for getting under delicate baked goods",
@@ -152,7 +152,7 @@
       "stock": 15
     },
     {
-      "id": 18,
+      
       "name": "Silicone Spatula with Wooden Handle",
       "category": "Mixed",
       "description": "Combines silicone head with wooden handle for comfort",
@@ -161,7 +161,7 @@
       "stock": 89
     },
     {
-      "id": 19,
+      
       "name": "Griddle Spatula",
       "category": "Metal",
       "description": "Wide, long spatula for flipping on large griddles",
@@ -170,7 +170,7 @@
       "stock": 87
     },
     {
-      "id": 20,
+      
       "name": "Mini Offset Frosting Spatula",
       "category": "Metal",
       "description": "Small offset spatula for cake decorating",
