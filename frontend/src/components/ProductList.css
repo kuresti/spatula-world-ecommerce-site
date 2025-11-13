@@ -1,0 +1,26 @@
+/* Outer container for all product cards */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 280px); /* matches the card width */
+    justify-content: center; /* centers grid horizontally */
+    gap: 24px; /* even space between cards */
+    padding: 32px 0 64px; /* space below footer */
+    background-color: #ffffff; /* matches site */
+    max-width: 1200px; /* aligns visually with header/footer width */
+    margin: 0 auto; /* centers the grid on the page */
+}
+
+/* Optional
+.product-list h2 {
+grid-column: 1 / -1; /* makes heading span full width of grid 
+text-align: center;
+font-size: 1.8rem;
+color: #333F44;
+margin-bottom: 1rem; */
+
+/* Scroll behavior to fit header/footer layout */
+body {
+    background-color: #f8f8f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333F44;
+}

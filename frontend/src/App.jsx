@@ -1,20 +1,46 @@
-import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Home from './components/pages/Home';
+import ProductList from './components/ProductList';
+import { getProducts } from './services/productService';
+
 
 function App() {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const res = await getProducts();
+        setProducts(res.data);
+      } catch (error) {
+        setError(error.message || 'Failed to load products');
+      } finally {
+        setLoading(false);
+      }
+    })();
+  }, []);
+
   return (
-    <>
       <div className="page">
       <Header cartCount={3} />
-      <main id="main" style={{ padding: '2rem', textAlign: 'center' }}>
-        <h2>Welcome to Spatula World!</h2>
-        <p>Your header component is working if you can see it above this text.</p>
+      <main id="main">
+          <Routes>
+            {/* Home Page Route*/}
+            <Route path="/" element={<Home />} />
+            {/* Products Page Route*/}
+            <Route path="/products" element={
+              loading ? <p>Loading...</p> : error ? <p style={{ color: 'red' }}>{error}</p> :
+              <ProductList products={products} />
+            } />
+          </Routes>
       </main>
         <Footer />
       </div>
-    </>
   );
 }
 

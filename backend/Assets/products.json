@@ -1,11 +1,10 @@
-{
-"products": [
+ [
     {
      "name": "Classic Silicone Spatula",
      "category": "Silicone",
      "description": "Heat-resistant silicone spatula for everyday cooking",
      "price": 9.99,
-     "image": "backend/Assets/images/classic-silicone-spatula.jpg",
+     "image": "/images/classic-silicone-spatula.jpg",
      "stock": 120
     },
     {
@@ -13,7 +12,7 @@
      "category": "Wood",
      "description": "Durable wooden spatula, perfect for non-stick pans",
      "price": 7.99,
-     "image":"backend/Assets/images/classic-silicone-spatula.jpg",
+     "image":"/images/classic-silicone-spatula.jpg",
      "stock": 80
     },
     {
@@ -22,7 +21,7 @@
       "category": "Metal",
       "description": "Sturdy stainless steel spatula for flipping foods",
       "price": 12.99,
-      "image": "backend/Assets/images/stainless-steel-turner.png",
+      "image": "/images/stainless-steel-turner.png",
       "stock": 60 
     },
     {
@@ -31,7 +30,7 @@
       "category": "Silicone",
       "description": "Heat-resistant slotted spatula for draining liquids",
       "price": 10.99,
-      "image": "backend/Assets/images/silicone-slotted-spatula.jpg",
+      "image": "/images/silicone-slotted-spatula.jpg",
       "stock": 90
     },
     {
@@ -40,7 +39,7 @@
       "category": "Silicone",
       "description": "Handy mini spatulas for baking and spreading",
       "price": 8.99,
-      "image": "backend/Assets/images/silicone-slotted-spatula.jpg",
+      "image": "/images/silicone-slotted-spatula.jpg",
       "stock": 150
     },
     {
@@ -49,7 +48,7 @@
       "category": "Metal",
       "description": "Flexible stainless steel spatula for delicate foods",
       "price": 13.99,
-      "image": "backend/Assets/images/wooden-spatula.jpg",
+      "image": "/images/wooden-spatula.jpg",
       "stock": 40
     },
     {
@@ -58,7 +57,7 @@
       "category": "Metal",
       "description": "Ideal for frosting cakes and decorating desserts",
       "price": 11.99,
-      "image": "backend/Assets/images/metal-offset-spatula.jpg",
+      "image": "/images/metal-offset-spatula.jpg",
       "stock": 45
     },
     {
@@ -67,7 +66,7 @@
       "category": "Nylon",
       "description": "Safe for non-stick cookware up to 400°F",
       "price": 9.49,
-      "image": "backend/Assets/images/high-heat-nylon-spatula.png",
+      "image": "/images/high-heat-nylon-spatula.png",
       "stock": 55
     },
     {
@@ -76,7 +75,7 @@
       "category": "Metal",
       "description": "Wide metal spatula for flipping pancakes and crepes",
       "price": 14.49,
-      "image": "backend/Assets/images/metal-pancake-spatula.png",
+      "image": "/images/metal-pancake-spatula.png",
       "stock": 100
     },
     {
@@ -85,7 +84,7 @@
       "category": "Silicone",
       "description": "Long-handled spatula for grilling and BBQ",
       "price": 15.99,
-      "image": "backend/Assets/images/bbq-silicone-spatula.png",
+      "image": "/images/bbq-silicone-spatula.png",
       "stock": 76
     },
     {
@@ -94,7 +93,7 @@
       "category": "Silicone",
       "description": "Flexible spatula for scraping bowls and jars",
       "price": 6.99,
-      "image": "backend/Assets/images/silicone-scraper-spatula.png",
+      "image": "/images/silicone-scraper-spatula.png",
       "stock": 45
     },
     {
@@ -103,7 +102,7 @@
       "category": "Silicone",
       "description": "Multi-colored spatulas for cooking and baking",
       "price": 16.99,
-      "image": "backend/Assets/images/colorful-silicone-spatula-set.jpg",
+      "image": "/images/colorful-silicone-spatula-set.jpg",
       "stock": 150
     },
     {
@@ -112,7 +111,7 @@
       "category": "Nylon",
       "description": "Heat-resistant spatula for non-stick pans",
       "price": 10.49,
-      "image": "backend/Assets/images/non-stick-turner-spatula.png",
+      "image": "/images/non-stick-turner-spatula.png",
       "stock": 85
     },
     {
@@ -121,7 +120,7 @@
      "category": "Silicone",
      "description": "Perfect for professional baking and pastry work",
      "price": 18.99,
-     "image": "backend/Assets/images/professional-silicone-baking-spatula.jpg",
+     "image": "/images/professional-silicone-baking-spatula.jpg",
      "stock": 72
     },
     {
@@ -130,7 +129,7 @@
       "category": "Metal",
       "description": "For flipping and draining foods on the stove",
       "price": 13.49,
-      "image": "backend/Assets/images/stainless-steel-slotted-turner.png",
+      "image": "/images/stainless-steel-slotted-turner.png",
       "stock": 23
     },
     {
@@ -139,7 +138,7 @@
       "category": "Silicone",
       "description": "Soft and flexible spatula for pancakes and omelets",
       "price": 11.49,
-      "image": "backend/Assets/images/silicone-pancake-turner.png",
+      "image": "/images/silicone-pancake-turner.png",
       "stock": 54
     },
     {
@@ -148,7 +147,7 @@
       "category": "Metal",
       "description": "Perfect for getting under delicate baked goods",
       "price": 12.99,
-      "image": "backend/Assets/images/angled-spatula.png",
+      "image": "/images/angled-spatula.png",
       "stock": 15
     },
     {
@@ -157,7 +156,7 @@
       "category": "Mixed",
       "description": "Combines silicone head with wooden handle for comfort",
       "price": 14.99,
-      "image": "backend/Assets/images/silicone-spatula-wood-handle.png",
+      "image": "/images/silicone-spatula-wood-handle.png",
       "stock": 89
     },
     {
@@ -166,7 +165,7 @@
       "category": "Metal",
       "description": "Wide, long spatula for flipping on large griddles",
       "price": 17.49,
-      "image": "backend/Assets/images/griddle-spatula.png",
+      "image": "/images/griddle-spatula.png",
       "stock": 87
     },
     {
@@ -175,9 +174,8 @@
       "category": "Metal",
       "description": "Small offset spatula for cake decorating",
       "price": 9.49,
-      "image": "backend/Assets/images/mini-offset-spatula.jpg",
+      "image": "/images/mini-offset-spatula.jpg",
       "stock": 12
     }
 
 ]
-}
