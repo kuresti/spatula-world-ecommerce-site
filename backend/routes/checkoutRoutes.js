@@ -6,7 +6,7 @@ const router = express.Router();
 const Stripe = require('stripe');
 require('dotenv').config();
 
-const stripe = Stripe(process.env.STRIPE_KEY);
+const stripe = Stripe(process.env.STRIPE_KEY_SECRET);
 
 /********************************
  * POST /api/checkout/create-session
