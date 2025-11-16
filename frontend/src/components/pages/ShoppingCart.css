@@ -1,0 +1,110 @@
+/* Shopping cart page styles */
+
+/* Main cart page layout */
+.cart-page {
+    max-width: 2rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 3rem;
+}
+
+.cart-page h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333f44;
+}
+
+/* Empty cart style */
+.cart-empty {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+
+.cart-empty h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #333f44;
+}
+
+.continue-shopping {
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    background-color: #ff7b00;
+    color: #ffffff;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease,
+        transform 0.05s ease;
+}
+
+.continue-shopping:hover {
+    background-color: #e56e00;
+    box-shadow: 0 2px 6px rgba(229, 110, 0, 0.35);
+}
+
+.continue-shopping:active {
+    transform: translateY(1px);
+}
+
+/* Cart layout: items and summary */
+.cart-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+/* Left: list of CartItem cards */
+.cart-item {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Right: order summary card */
+.cart-summary {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba( 0, 0, 0 0.06);
+    border: 1px solid #e4eaee;
+}
+
+.cart-summary h2 {
+    font-size: 1.35rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #333f44;
+}
+
+.cart-summary p strong {
+    font-size: 1.05rem;
+    color: #22292c;
+}
+
+/* Clear cart button (secondary style) */
+.btn-secondary {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.1rem;
+    border-radius: 999px;
+    border: 1px solid #c9d0d5;
+    background-color: #ffffff;
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: #555f64;
+    font-family: inherit;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease,
+        border-coor 0.2s ease, transform 0.5s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #f3f6f8;
+    border-color: #b4c0c8;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.btn-secondary:active {
+    transform: translateY(1px);
+}

@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 import logoImage from '../assets/logo-chatgpt.svg';
 import { FaShoppingCart } from 'react-icons/fa';
+import { useCart } from './CartContext';
 
 // Array for navigation links
 const defaultLinks = [
@@ -19,8 +20,10 @@ const defaultLinks = [
 
 export default function Header({
     logo = logoImage,
-    links = defaultLinks,
-    cartCount = 0 }) {
+    links = defaultLinks, }) {
+    
+    const { count } = useCart();
+
     return (
         <header className="site-header">
             
@@ -52,10 +55,10 @@ export default function Header({
                     <Link
                         to="/cart"
                         className="cart-link"
-                        aria-label={`Shopping cart with ${cartCount} items${cartCount === 1 ? '' : 's'}`}>
+                        aria-label={`Shopping cart with ${count} items${count === 1 ? '' : 's'}`}>
                         {/*Asked chatGPT where to get a shopping cart icon, it suggested using react-icons 11/11/2025*/}
                         <FaShoppingCart className="cart-icon" />
-                        {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
+                        {count > 0 && <span className="cart-badge">{count}</span>}
                     </Link>
                 </div>
 

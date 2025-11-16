@@ -3,5 +3,10 @@
  ********************************/
 import API from './api';
 
-export const getProducts = () => API.get('/');
-export const getProductById = () => API.get('/:id');
+export function getProducts() {
+    return API.get('/products');
+}
+
+export function getProductById(id) {
+    return API.get(`/products/${id}`);
+}
