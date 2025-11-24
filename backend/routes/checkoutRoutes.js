@@ -44,7 +44,7 @@ router.post('/create-session', async (req, res) => {
             mode: 'payment',
             payment_method_types: ['card'],
             line_items: lineItems, // an array of obj that include the products and quantity of the order.
-            success_url: `${process.env.FRONTEND_URL}/checkout-success`, // Set up to redirect t checkout-success when order is successful (not working right now)
+            success_url: `${process.env.FRONTEND_URL}/checkout-success`, // Set up to redirect t checkout-success when order is successful 
             cancel_url: `${process.env.FRONTEND_URL}/checkout-cancel`, // Set up to show if order is unsuccessful or cancelled.
         });
 
