@@ -5,6 +5,17 @@ In building this project my purpose was to learn how to build a full-stack web a
 
 This is an e-commerce app that sells spatulas. It has a products page with cards that include an image, description, and an 'Add to Cart' button. The home page has a shopping cart icon that shows the count of product in the cart and is a working link to the shopping cart page. The shopping cart page shows a list of items added to the cards with images and prices fetched from MongoDB. There is a quantity button to add more of an item on each card. There is a running subtotal in the summary section. There is a checkout button that directs the user to Stripe, a secure payment site. When payment is made and successful the user is redirected to a success checkout page. The app gets its products from a mongoDB cluster and manually seeded using a JSON file. To start the app in the terminal from the navigate to backend and type npm run dev then open another terminal and navigate to the frontend. Then type npm run dev and go to the localhost 5173.
 
+# Screenshots
+### Product Page
+![Products](./screenshots/product_page.png)
+
+### Cart Page
+![Cart](./screenshots/cart.png)
+
+### Checkout Page
+![Checkout](./screenshots/checkout.png)
+
+
 # Architecture Overview
 The flow of this project goes from the UI which is run with React -> In react axios is imported to make requests to the backend -> The backend then sends a request to fetch the products list from MongoDB 
 
