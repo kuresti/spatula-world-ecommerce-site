@@ -1,13 +1,33 @@
 # spatula-world-ecommerce-site
 # Overview
-In building this project my purpose was to learn how to build a web app using React.
+In building this project my purpose was to learn how to build a full-stack web application using React on the frontend, Node.js/Express on the backend, MongoDB for storage of the product list and in the future an orders list, and Stripe for secure payments.
 
 
-This is an e-commerce app that sells spatulas. It has a products page with cards that include an image, description, and an 'Add to Cart' button. The home page has a shopping cart icon that shows the count of product in the cart and is a working link to the shopping cart page. The shopping cart page shows a list of items added to the cards with images and prices. There is a quantity button to add more of an item on each card. There is a running subtotal in the summary section. There is a checkout button that directs the user to a secure payment site. When payment is made and successful the user is redirected to a success checkout page. The app gets its products from a mongoDB cluster. To start the app in the terminal from the navigate to backend and type npm run dev then open another terminal and navigate to the frontend. Then type npm run dev and go to the localhost 5173.
+This is an e-commerce app that sells spatulas. It has a products page with cards that include an image, description, and an 'Add to Cart' button. The home page has a shopping cart icon that shows the count of product in the cart and is a working link to the shopping cart page. The shopping cart page shows a list of items added to the cards with images and prices fetched from MongoDB. There is a quantity button to add more of an item on each card. There is a running subtotal in the summary section. There is a checkout button that directs the user to Stripe, a secure payment site. When payment is made and successful the user is redirected to a success checkout page. The app gets its products from a mongoDB cluster and manually seeded using a JSON file. To start the app in the terminal from the navigate to backend and type npm run dev then open another terminal and navigate to the frontend. Then type npm run dev and go to the localhost 5173.
+
+# Architecture Overview
+The flow of this project goes from the UI which is run with React -> In react axios is imported to make requests to the backend -> The backend then sends a request to fetch the products list from MongoDB 
+
+* Frontend (React + Vite)
+    * Displays the Home page, the product catalog, the shopping cart, and checkout page
+    * Manages the global cart state with React Context
+    * Sends API requests using Axios
+    * Redirects to Stripe checkout
+* Backend (Node.js + Express)
+    * REST API endpoints, such as:
+        * /api/products
+        * /api/create-checkout-session
+    * Retrieves product data from MongoDB
+    * Creates Stripe checkout sessions
+* Database (MongoDB)
+    * Stores product list only
+    * No users, roles, or admin accounts
+    * Manual import through JSON seeding
 
 The purpose for writing this software was to learn how to use the React libraries, along with Node.js, Express to create a server, MongoDB to get data, and Stripe to create a secure payment service.
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running (starting the server and navigating through the web pages) and a walkthrough of the code.}
+Note: This application does not include user accounts, login, authentication, or admin features. All users are anonymous, and checkout is handled directly through Stripe's hosted payment flow.
+
 
 [Software Demo Video](http://youtube.link.goes.here)
 
@@ -23,11 +43,70 @@ Express
 Stripe
 Axios
 Vite
+MongoDB 
 
 The programming languages used are:
 jsx
 css
 JavaScript
+
+# How to Run This Project
+
+1. Prerequisites
+    Install:
+    * Node.js (18+ recommended)
+    * npm
+    * Create a MongoDB Atlas account (or local MongoDB install)
+
+2. Clone the Repository
+    * Clone the repository from GitHub or,
+    * In bash (terminal)
+        * git clone https://github.com/your-username/spatula-world-ecommerce-site.git
+        * cd spatula-world-ecommerce-site
+3. Environmental Variables
+    * Create a .env file inside backend folder.
+    * .env.example
+        * MONGO_URI=your-mongodb-connection-string
+        * STRIPE_SECRET_KEY=your-stripe-secret-key
+        * CLIENT_URL=http://localhost:5173
+        * PORTAL=3000
+    * Copy and rename:
+        * cp backend/.env.example backend/.env
+        * Fill in your actual values before running the app.
+4. Install Dependencies
+    * Backend
+        * In bash (terminal)
+        * cd backend
+        * npm install
+    * Frontend
+        * In bash (terminal)
+        * cd ../frontend
+        * npm install
+
+* Seeding the Database (Manual Import)
+    The products list for this application is manually imported into MongoDB using a JSON file
+    which is included in the assets folder.
+
+    * How to Seed Products
+      1. Open your MongoDB (either Atlas cluster or local MongoDB cluster)
+      2. Go to Collections.
+      3. Create a collection named products.
+      4. Open the products.json file included in the assets folder of this project.
+      5. Copy the entire JSON array.
+      6. In MongoDB:
+         * Click Insert Document
+         * Switch to Insert Many
+         * Paste the JSON data
+         * Click Insert
+    
+# Users and Authorization
+This application does not include:
+    * User registration
+    * Login
+    * Authentication
+    * Admin roles
+    * Admin dashboards
+No user documents or admin accounts are required for this project.
 
 # Useful Websites
 * [geekforgeeks](https://www.geeksforgeeks.org/reactjs/shopping-cart-app-using-react/)
@@ -44,3 +123,12 @@ JavaScript
 * In the final checkout I would like to add shipping and tax to be calculated into the total.
 * I would also like to add a cluster to MongoDB to post successful order information
 * I would also like to make this application responsive.
+* Add authentication and user accounts
+* Add admin functionality for managing products list.
+
+# What I learned from this project
+* How to build a React application with reusable components
+* How to use React Context to manage the global state of the application
+* How to integrate Stripe's secure checkout
+* How to structure documentation for clean project setup
+* How to create an application using .jsx
