@@ -40,7 +40,7 @@ The purpose for writing this software was to learn how to use the React librarie
 Note: This application does not include user accounts, login, authentication, or admin features. All users are anonymous, and checkout is handled directly through Stripe's hosted payment flow.
 
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/cVP6ZY3rENc)
 
 # Web Pages
 The Home page has navigation to the products page and the shopping-cart page. It has working links to instagram and facebook. The shopping cart count is dynamically created using a context. The Products page is dynamically created using data from a MongoDB cluster that was seeded. It is created using a product card component to create the layout of the card and a product list component that makes a call to the backend which fetches the data from MongoDB. Then the list is iterated through using .map to create the cards seen on the product page. The shopping-cart page shows a list of products added to the cart when the user clicks the "Add to Cart" button on the product card in the products page. The list of products on the shopping-cart page shows a smaller thumbnail picture of the product with a quantity input to add more of the product. This is done dynamically. There is also a summary page which keeps a running sub-total of items in the cart. At the bottom of the section there is a checkout button which redirects the user to a secure stripe payment site. When the payment is successful the user is redirected to a checkout success page.
