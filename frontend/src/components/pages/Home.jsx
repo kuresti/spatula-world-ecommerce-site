@@ -3,6 +3,7 @@
  ********************************/
 import React from 'react';
 import './Hero.css';
+import { Link } from 'react-router-dom';
 
 
 export default function Home() {
@@ -12,7 +13,9 @@ export default function Home() {
                 <div className="hero-overlay">
                     <h1>Welcome to Spatula World</h1>
                     <p>Flip, stir, and serve with the world's finest spatulas.</p>
-                    <button className="primary">Shop Now</button>
+                    <Link
+                        to="/products"
+                        className="primary">Shop Now</Link>
                 </div>
             </section>
             {/*Asked chatGPT5 for content for the paragraphs 11/13/25 */}

@@ -34,6 +34,7 @@
 
 .hero-overlay .primary {
     background-color: #FF6B35;
+    padding: 12px 24px;
     border: none;
     border-radius: 10px;
     color: #ffffff;
